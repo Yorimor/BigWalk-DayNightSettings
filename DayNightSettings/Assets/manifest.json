@@ -1,0 +1,10 @@
+{
+  "name": "DayNightSettings",
+  "version_number": "1.0.0",
+  "website_url": "",
+  "description": "Allows the host to control the Day/Night cycle",
+  "dependencies": [
+	"BepInEx-BepInExPack_IL2CPP-6.0.755",
+    "Ice_Box_Studio_BigWalk-ModSettingsMenu-1.0.0"
+  ]
+}
