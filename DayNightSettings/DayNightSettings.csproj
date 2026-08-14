@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Product>DayNightSettings</Product>
+        <Version>1.0.0</Version>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <LangVersion>latest</LangVersion>
+        <RestoreAdditionalProjectSources>
+            https://api.nuget.org/v3/index.json;
+            https://nuget.bepinex.dev/v3/index.json;
+            https://nuget.samboy.dev/v3/index.json
+        </RestoreAdditionalProjectSources>
+        <RootNamespace>DayNightSettings</RootNamespace>
+        <PackageId>DayNightSettings</PackageId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.*" IncludeAssets="compile"/>
+        <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Assembly-CSharp">
+        <HintPath>..\..\..\Documents\Unity Moidding\Big Walk\cpp2il_out\Assembly-CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="Enviro3.Runtime">
+        <HintPath>..\..\..\Documents\Unity Moidding\Big Walk\cpp2il_out\Enviro3.Runtime.dll</HintPath>
+      </Reference>
+      <Reference Include="Mirror">
+        <HintPath>..\..\..\Documents\Unity Moidding\Big Walk\cpp2il_out\Mirror.dll</HintPath>
+      </Reference>
+      <Reference Include="Mirror.Authenticators">
+        <HintPath>..\..\..\Documents\Unity Moidding\Big Walk\cpp2il_out\Mirror.Authenticators.dll</HintPath>
+      </Reference>
+      <Reference Include="Mirror.Components">
+        <HintPath>..\..\..\Documents\Unity Moidding\Big Walk\cpp2il_out\Mirror.Components.dll</HintPath>
+      </Reference>
+      <Reference Include="Mirror.Examples">
+        <HintPath>..\..\..\Documents\Unity Moidding\Big Walk\cpp2il_out\Mirror.Examples.dll</HintPath>
+      </Reference>
+      <Reference Include="Mirror.Transports">
+        <HintPath>..\..\..\Documents\Unity Moidding\Big Walk\cpp2il_out\Mirror.Transports.dll</HintPath>
+      </Reference>
+      <Reference Include="ModSettingsMenu">
+        <HintPath>..\..\..\Downloads\Ice_Box_Studio_BigWalk-ModSettingsMenu-1.0.0\BepInEx\plugins\ModSettingsMenu.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.CoreModule">
+        <HintPath>..\..\..\Documents\Unity Moidding\Big Walk\cpp2il_out\UnityEngine.CoreModule.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+</Project>
